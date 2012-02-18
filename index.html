@@ -5,10 +5,13 @@
         <title>Swÿp Hack Night @Intrepid, February 18th</title>
 
         <link rel="stylesheet" href="public/style.css">
+        <link rel="stylesheet" href="public/fancybox/jquery.fancybox-1.3.4.css">
+        
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
         </script>
         <script src="public/jquery.ui.map.min.js"></script>
+        <script src="public/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 
         <script type="text/javascript">
           var position = {'position': '42.366899,-71.080127'};
@@ -23,6 +26,8 @@
                                    +'222+3rd+Street+4th+floor+Cambridge,+MA+02142';
                  });
             });
+
+            $("#directions").fancybox();
           });
         </script>
     </head>
@@ -59,7 +64,10 @@
         <div id="gmap"></div>
 
         <div id="location">
-          <p><a href="http://www.intrepid-labs.com">Intrepid Labs</a></p>
+          <p>
+            <a href="http://www.intrepid-labs.com">Intrepid Labs</a>
+            <a id="directions" href="public/birds-eye-arrowview.png">How to get there</a>
+          </p>
           <p class="address">
             222 3rd Street <br>
             4th floor <br>
