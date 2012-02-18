@@ -13,21 +13,22 @@
         <script type="text/javascript">
           var position = {'position': '42.366899,-71.080127'};
           $(document).ready(function(){
-              $('#gmap').gmap({'center':position['position']});
-              $('#gmap').gmap('option', 'zoom', 14);
+            $('#gmap').gmap({'center':position['position']});
+            $('#gmap').gmap('option', 'zoom', 14);
 
-              $('#gmap').gmap().bind('init', function(event, map){
-                $('#gmap').gmap('addMarker', position)
-                  .click(function(){
-                    window.location = 'http://maps.google.com/maps?q='
-                                     +'222+3rd+Street+4th+floor+Cambridge,+MA+02142';
-               });
+            $('#gmap').gmap().bind('init', function(event, map){
+              $('#gmap').gmap('addMarker', position)
+                .click(function(){
+                  window.location = 'http://maps.google.com/maps?q='
+                                   +'222+3rd+Street+4th+floor+Cambridge,+MA+02142';
+                 });
             });
           });
         </script>
     </head>
 
     <body>
+      <div id="panel"></div>
       <h1>Swÿp Hack Night @Intrepid</h1>
       <dl>
         <dt>When:</dt>
