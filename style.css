@@ -14,7 +14,7 @@ size=18px):before {
   font-weight: normal;
 }
 html {
-  background: url("img/groovepaper.png") repeat;
+  background: url("img/furley_bg.png") repeat;
   border-top: 4px solid #ffa500;
   border-bottom: 4px solid #ffa500;
 }
@@ -23,8 +23,7 @@ body {
   width: 640px;
   margin: 0 auto;
   line-height: 1.5;
-}
-#  padding 32px 64px {
+  padding: 32px 64px;
   background: none;
   text-shadow: 0px 1px 0px #fff;
 }
